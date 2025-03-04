@@ -41,5 +41,8 @@
 		"onlyBuiltDependencies": [
 			"esbuild"
 		]
+	},
+	"dependencies": {
+		"@fontsource-variable/source-sans-3": "^5.2.5"
 	}
 }
