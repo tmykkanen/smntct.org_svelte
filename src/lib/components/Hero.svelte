@@ -15,6 +15,7 @@
 <div
 	class="grid min-h-screen min-w-screen place-items-center bg-cover bg-center"
 	style:background-image="url({imgURL})"
+	{id}
 >
 	{#if overlay}
 		<div class="bg-neutral col-start-1 row-start-1 h-screen w-screen opacity-50"></div>

@@ -51,3 +51,7 @@
 		@apply prose md:prose-xl xl:prose-2xl prose-a:no-underline prose-a:bg-[url(/src/lib/assets/1x2-00adb5ff.png)] prose-a:bg-repeat-x prose-a:bg-[left_95%] prose-a:hover:bg-accent prose-a:hover:rounded-lg prose-pre:font-light prose-pre:italic prose-pre:text-wrap prose-pre:font-sans prose-pre:bg-transparent prose-pre:text-neutral-300;
 	}
 }
+
+html {
+	scroll-behavior: smooth;
+}
