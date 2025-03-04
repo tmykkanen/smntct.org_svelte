@@ -3,6 +3,7 @@
 @plugin '@tailwindcss/typography';
 @plugin 'daisyui';
 
+/* DAISYUI CUSTOM THEME */
 @plugin "daisyui/theme" {
 	name: 'custom';
 	default: true;
@@ -38,6 +39,15 @@
 	--noise: 0;
 }
 
+/* DEFINE FONTS FROM FONTSOURCE */
+/* Must import font in root layout file */
 @theme {
 	--font-sans: 'Source Sans 3', 'sans-serif';
+}
+
+/* ADD DEFAULTS FOR PROSE STYLES HERE */
+@layer base {
+	body {
+		@apply prose md:prose-xl xl:prose-2xl prose-a:no-underline prose-a:bg-[url(/src/lib/assets/1x2-00adb5ff.png)] prose-a:bg-repeat-x prose-a:bg-[left_95%] prose-a:hover:bg-accent prose-a:hover:rounded-lg prose-pre:font-light prose-pre:italic prose-pre:text-wrap prose-pre:font-sans prose-pre:bg-transparent prose-pre:text-neutral-300;
+	}
 }
