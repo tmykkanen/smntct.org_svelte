@@ -1,6 +1,8 @@
 <script>
 	import Hero from '$lib/components/Hero.svelte'
 	import imgURL from '$lib/assets/ivan-bandura-XsAz9Mq61XY-unsplash.jpg'
+	import FeaturesBlock from '$lib/components/FeaturesBlock.svelte'
+	import data from '$lib/assets/visionData.js'
 </script>
 
 <Hero {imgURL} overlay id="welcome">
@@ -60,3 +62,12 @@ that you will not live to harvest.</pre>
 		</p>
 	{/snippet}
 </Hero>
+
+<FeaturesBlock id="vision" featureSide="right" {data}>
+	{#snippet heading()}
+		<h2>
+			Over the next 100 years, we aim to start and strengthen churches in Southern MN that share a
+			Gospel Imaginary.
+		</h2>
+	{/snippet}
+</FeaturesBlock>
