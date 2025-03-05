@@ -33,8 +33,6 @@
 	}
 
 	const { id, data, featureSide, heading }: Props = $props()
-
-	console.log(featureSide)
 </script>
 
 <div class="bg-secondary grid min-h-screen min-w-screen place-items-center bg-cover bg-center" {id}>

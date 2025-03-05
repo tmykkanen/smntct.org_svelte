@@ -39,6 +39,13 @@
 	--noise: 0;
 }
 
+/* DAISYUI OVERRIDES */
+.btn-ghost {
+	&:hover {
+		@apply text-primary border-transparent bg-neutral-300;
+	}
+}
+
 /* DEFINE FONTS FROM FONTSOURCE */
 /* Must import font in root layout file */
 @theme {
